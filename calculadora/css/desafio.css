@@ -2,6 +2,35 @@ body {
   display: flex;
   flex-direction: column;
   flex: 1;
+  background-color: rgb(232, 194, 235);
   align-items: center;
   box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 100;
+  font-size: 16px;
+}
+
+.custom-box{
+  max-width: 700px;
+  background-color: #f6f0f7;
+  box-shadow: 5px 10px #9d3dca;
+  margin: 60px auto;
+  padding: 30px;
+  border-radius: 60px;
+  animation: fadeIn 1s ease;
+  text-align: center;
+}
+
+.btn{
+  padding: 10px 25px;
+  background-color: rgb(224, 165, 228);
+  color: white;
+  border-radius: 5px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: 600;
+  display: inline-block;
+  text-transform: uppercase;
+
 }
