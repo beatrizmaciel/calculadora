@@ -2,7 +2,7 @@ body {
   display: flex;
   flex-direction: column;
   flex: 1;
-  background-color: rgb(232, 194, 235);
+  background-color: rgb(239, 223, 240);
   align-items: center;
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
@@ -10,20 +10,39 @@ body {
   font-size: 16px;
 }
 
+/* BARRA NAVEGACAO */
+.barra-navegacao {
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  height: 70px;
+  width: 100%;
+  background-color: #462755;
+  color:white;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+.barra-navegacao__logotipo {
+  max-height: 70%;
+  max-width: 70%;
+}
+
 .custom-box{
   max-width: 700px;
-  background-color: #f6f0f7;
-  box-shadow: 5px 10px #9d3dca;
-  margin: 60px auto;
+  background-color: #f8f8f8;
+  box-shadow: 5px 10px #462755;
+  margin: 150px auto;
   padding: 30px;
-  border-radius: 60px;
+  border-radius: 20px;
   animation: fadeIn 1s ease;
   text-align: center;
 }
 
 .btn{
   padding: 10px 25px;
-  background-color: rgb(224, 165, 228);
+  background-color: #943eaa;
   color: white;
   border-radius: 5px;
   font-family: 'Montserrat', sans-serif;
@@ -33,4 +52,27 @@ body {
   display: inline-block;
   text-transform: uppercase;
 
+}
+
+.resposta{
+  font-weight: 500;
+  color: #943eaa;
+}
+
+.voltar{
+  color: black;
+  font-style: italic;
+}
+
+/* RODAPE */
+.rodape {
+  font-size: 18px;
+  font-style: italic;
+  text-align: center;
+  color: #462755;
+  background-color: #f6f6f6;
+  padding: 1rem 1rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
