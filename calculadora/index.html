@@ -1,30 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Workshop - Desafio</title>
-    <link rel="stylesheet" type="text/css" href="css/desafio.css" />
-  </head>
-  <body>
-    <nav class="barra-navegacao">
-      <h1>Calculadora Freelancer</h1>
-    </nav>
-    <div class="custom-box">
-    <label for="valor-hora">Valor Hora</label><br>
-    <input type="number" id="valor-hora" /><br><br>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <title>Calculadora</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,700;1,400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
 
-    <label for="horas-projeto">Horas Projeto</label><br>
-    <input type="number" id="horas-projeto" /><br><br>
+    <body>
+        <div class="calculadora">
+            <form name="form">
+                <input class="display" id="display" value="0" disabled>
+            </form>
+          <table class="corpo">
+            <tr>
+              <td><input type="button" class="operator" value="c" id="clean"></td>
+              <td><input type="button" class="operator" value="<"></td>
+              <td><input type="button" class="operator" value="x"></td>
+              <td><input type="button" class="operator" value="%"></td>
+            </tr>
+            <tr>
+              <td><input type="button" class="number" value="7"></td>
+              <td><input type="button" class="number" value="8"></td>
+              <td><input type="button" class="number" value="9"></td>
+              <td><input type="button" class="operator" value="-"></td>
+            </tr>
+            <tr>
+              <td><input type="button" class="number" value="4"></td>
+              <td><input type="button" class="number" value="5"></td>
+              <td><input type="button" class="number" value="6"></td>
+              <td><input type="button" class="operator" value="+"></td>
+            </tr>
+            <tr>
+              <td><input type="button" class="number" value="1"></td>
+              <td><input type="button" class="number" value="2"></td>
+              <td><input type="button" class="number" value="3"></td>
+              <td rowspan="2"><input type="button" class="operator" value="=" style="height: 130px;" ></td>
+            </tr>
+            <tr>
+              <td colspan="2"><input type="button" class="number" value="0" style="width: 138px;" ></td>
+              <td><input type="button" class="operator" value="." ></td>
+            </tr>
+          </table>
+        </div>
+        <script type="text/javascript" src="js/script.js" defer></script>
+    </body>
 
-    <span id="resposta" class="resposta">Resposta</span><br><br>
-    <div class="next-question-btn">
-    <button type="button" class="btn" onclick="calcular()">Calcular Projeto</button><br><br>
-    </div>
-    <a href="index.html" class="voltar">Voltar</a>
-
-    <script type="text/javascript" src="js/desafio.js"></script>
-    </div>
-    <footer class="rodape">Feito com muito ♥ por Beatriz - 2021</footer>
-  </body>
 </html>
