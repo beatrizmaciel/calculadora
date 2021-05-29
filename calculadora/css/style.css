@@ -1,0 +1,131 @@
+:root {
+
+    --azul: rgb(69, 178, 252);
+    --montserrat: "Montserrat", sans-serif;
+}
+
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    padding: 50px;
+    font-family: var(--montserrat);
+    font-size: 1em;
+    background-image: url(../img/landscape.png);
+    
+
+}
+
+/* Calculadora */
+
+.calculadora {
+    width: 332px;
+    padding: 3% 3%;
+    margin: auto;
+    text-align: center;
+    background-color: rgb(255, 249, 217);
+    font-size: 1.2rem;
+    border: solid 1px black;
+    border-radius: 10px;
+    box-shadow: 0px 1px 7px 0px black;
+    
+}
+
+.corpo{
+    align-items: center;
+}
+
+/* Tela */
+
+.display {
+    width: 100%;
+    display: grid;
+    border: solid 1px gray;
+    border-radius: 5px;
+    padding: 0% 10%;
+    height: 70px;
+    color: black;
+    text-align: right;
+    font-weight: 700;
+    font-size: larger;
+    margin-bottom: 5%;
+    
+}
+
+.display input {
+    display: block;
+    text-align: left;
+    padding: 8px 7px;
+    background: none;
+    font-size: 0.9rem;
+    color: aqua;
+}
+
+.display output{
+    display: block;
+    text-align: right;
+    padding: 0px 5px;
+    background: none;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+/* Teclado */
+
+.form{
+    width: 100%;
+    display: center;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+    padding: 10px;
+    
+}
+
+.operator {
+    width: 70px;
+    height: 70px;
+    border: none;
+    border-radius: 50%;
+    font-family: v(--montserrat);
+    font-size: 1.5rem;
+    cursor: pointer;
+    outline: none;
+    color: white;
+    background-color: rgb(136, 19, 130);
+}
+
+.number {
+ 
+    width: 70px;
+    height: 70px;
+    border: none;
+    border-radius: 50%;
+    font-family: v(--montserrat);
+    font-size: 1.5rem;
+    cursor: pointer;
+    outline: none;
+    background-color: rgb(251, 149, 255);
+    
+}
+
+.button:hover {
+    background-image: linear-gradient(pink, yellow);
+}
+
+.button.operator {
+    font-weight: bold;
+    font-size: 1.5rem;
+    background-color: pink;
+    color: black;
+}
+
+.button.operator:hover{
+    background-image: linear-gradient(green, yellow);
+}
