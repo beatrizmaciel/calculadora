@@ -28,8 +28,10 @@ function clean() {
 
 function equal() {
     var exp = display.value
+    // flag é usada para valores booleanos, para usar posteriormente
     var flag = false  
 
+// NaN = Not-A-Number. Neste caso, se um não número for digitado, retorna um erro 
     for(i = 0; i < exp.length; i++) {
         if(isNaN(exp[i]) && isNaN(exp[i+1])) {
             if(exp[i] != "+" && exp[i] != "-") {
@@ -41,6 +43,8 @@ function equal() {
     }
 
     if(flag == false) {
+        /* usamos o argumento eval() para retornar um elemento inalterado (e às vezes uma string)
+        entretanto, o eval executa o passado com o caller, o que pode ser ruim [pesquisar mais]*/
         var answer = eval(exp)
 
         if(isFinite(answer)) {
@@ -59,7 +63,7 @@ function back() {
     if(SyntaxError) {
         return
     }
-
+    // substring para limpar os dígitos
     display.value = display.value.substring(0,display.value.length-1)
     
     if(display.value == "") {
@@ -83,6 +87,7 @@ operators.forEach( (button) => {
     button.addEventListener('click', calculate)
 })
 
+// para apertar o botão e o JS "ouvir"
 window.addEventListener('keypress', check)
 function check(key) {
     let keyValue = key.key
